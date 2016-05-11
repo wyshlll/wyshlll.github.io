@@ -1,0 +1,9 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/WebApplication1/renwu7/bin
+/WebApplication1/renwu7/obj/Debug
+/WebApplication1/packages
+*.suo
+/WebApplication1/.vs/config
