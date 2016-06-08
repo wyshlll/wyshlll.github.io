@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>jQuery选择符练习</title>
+    <meta charset='utf-8'>
+    <script src="jquery-1.12.4.min.js"></script>
+    <style>
+    .title {
+        font-size: 20px;
+    }
+    
+    .info {
+        background-color: #ccc;
+    }
+    
+    .warning {
+        background-color: yellow;
+        color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>jQuery选择符</h1>
+    <h1 class="title">jQuery选择符</h1>
+    <p>广告学专业</p>
+    <p>广告学专业</p>
+    <p>新闻学专业</p>
+    <p>广告学专业</p>
+    <p>广告学专业</p>
+    <p>新闻学专业</p>
+    <script>
+    $(document).ready(
+        function() {
+            $("h1").css('color', "red");
+            $('.title').addClass('title');
+            $('p:contains("广告")').addClass('info');
+            $('p:eq(2)').addClass('warning');
+        }
+
+    );
+    </script>
+</body>
+
+</html>
