@@ -1,0 +1,71 @@
+<!DOCTYPE html public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>全屏动画焦点图切换</title>
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+/* header */
+.header{background:url(images/header/header43.jpg);}
+</style>
+
+<link href="css/jquery.onebyone-min.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!--[if IE]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+
+</head>
+<body>
+
+<div class="header">
+	<div id="onebyone_slider">
+	
+		<div class="oneByOne_item">
+			<span class="ob1_title"> 王延尚  百科大一</span>
+			<span class="ob1_description">呆萌傻缺笨</span>
+			
+			<img src="images/header/2.png" class="ob1_img_device1" alt="漫画原创时间日期Jquery插件" />
+		</div>
+		
+		<div class="oneByOne_item">
+			<span class="ob1_title">王延尚  百科大二</span>
+			<span class="ob1_description">傻缺笨呆萌</span>
+			
+			<img src="images/header/2.png" class="ob1_img_device1" alt="jcDate原创时间Jquery插件" />
+		</div>
+		
+		<div class="oneByOne_item">
+			<span class="ob1_title">王延尚  百科大三</span>
+			<span class="ob1_description">笨呆萌傻缺</span>
+			<img src="images/header/2.png" class="ob1_img_device1" alt="漫画原创弹出内容提示Jquery插件" />
+		</div>
+		
+		<div class="oneByOne_item">
+			<span class="ob1_title">王延尚  百科大四</span>
+			<span class="ob1_description">傻缺呆萌笨</span>
+			
+			<img src="images/header/2.png" class="ob1_img_device1" alt="BubbleTips气泡提示Jquery插件" />
+		</div>
+		
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.plugins-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#onebyone_slider').oneByOne({
+		className:'oneByOne1',
+		easeType:'random',
+		slideShow:true,
+		delay:200,
+		slideShowDelay:4000
+	})
+});
+</script>
+<div style="text-align:center;clear:both">
+</div>
+</body>
+</html>
